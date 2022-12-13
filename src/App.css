@@ -1,0 +1,309 @@
+body {
+    background-color: #EDEEF2;
+}
+
+.App {
+    width: 95%;
+    margin: var(--mb-1) auto;
+}
+
+/* ELEMENTS CONTAINER */
+.elements__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.elements__container h1 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: var(--h1-font-size);
+}
+
+.elements__container .add__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 15px;
+    border-radius: 5px;
+    background-color: var(--button-two-color);
+    color: #FFF;
+}
+
+/* USER CARD */
+.user__section {
+    margin-top: var(--mb-1-5);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.border__card {
+    border-bottom: 2px solid rgba(0, 0, 0, .04);
+}
+
+.user__card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+}
+
+
+.user__card h2 {
+    width: 100%;
+    font-weight: 500;
+    font-size: var(--h2-font-size);
+
+}
+
+.user__card ul {
+    margin-top: var(--mb-0-5);
+    width: 100%;
+}
+
+.user__card ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: var(--mb-0-5);
+    font-size: var(--normal-font-size);
+    line-height: 20px;
+}
+
+.user__card ul li span {
+    color: var(--span-color);
+}
+
+.user__card .buttons {
+    margin-top: var(--mb-0-5);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.user__card .buttons button {
+    border-radius: 5px;
+    padding: 7px 12px;
+    color: #FFF;
+    transition-duration: .2s;
+}
+
+.user__card .buttons button:first-child {
+    background-color: var(--button--one-hover-color);
+}
+
+.user__card .buttons button:first-child:hover {
+    background-color: var(--button-one-color);
+}
+
+.user__card .buttons button:last-child {
+    background-color: #918f8f;
+}
+
+.user__card .buttons button:last-child:hover {
+    background-color: #BDBDBD;
+}
+
+
+/*=============== FORM SECTION ===============*/
+.form__section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(2px);
+}
+
+.form__container {
+    width: 80%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 20px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgb(32 33 36 / 28%);
+}
+
+.form__container form {
+    width: 100%;
+}
+
+.form__container .form__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.form__container h3 {
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+}
+
+.form__container .form__header button {
+    font-weight: 700;
+    color: var(--button--one-hover-color);
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.1rem;
+}
+
+.form__container .form__content {
+    margin-bottom: var(--mb-0-5);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form__container .form__content label {
+    color: #000;
+    font-size: var(--small-font-size);
+}
+
+.form__container .form__content input {
+    padding: 3px 10px;
+    border-radius: 10px;
+    background-color: #F9FAFC;
+    border: 1px solid #C3C1C1;
+}
+
+.form__container .form__content .input__error {
+    border-color: var(--button--one-hover-color);
+}
+
+.form__container .form__content input:focus {
+    outline: none;
+}
+
+.form__container .add__user__button {
+    margin-top: var(--mb-0-5);
+    background-color: var(--button-two-color);
+    color: #FFF;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 13px 10px;
+    transition-property: all;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+.form__container button:hover {
+    filter: brightness(1.2);
+}
+
+
+/*=============== MODAL DELETE ===============*/
+.form__container .card__header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__container .card__header h3{
+    font-weight: 700;
+}
+
+.form__container .card__header button{
+    font-weight: 700;
+    font-size:1rem;
+    color: var(--button--one-hover-color);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.form__container .card__content{
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+.form__container .card__content span{
+    color: var(--body--color);
+    font-weight: 700;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+
+    /* USER CARD */
+    .user__section {
+        justify-content: flex-start;
+    }
+
+    .user__card {
+        width: 48.5%;
+    }
+
+    /*=============== FORM SECTION ===============*/
+    .form__container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .App {
+        width: 90%;
+        margin: var(--mb-1-5) auto;
+    }
+
+    /* USER CARD */
+    .user__card {
+        width: 31.9%;
+    }
+
+    /*=============== FORM SECTION ===============*/
+    .form__container {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .App {
+        width: 80%;
+        margin: var(--mb-2) auto;
+    }
+
+    /* USER CARD */
+    .user__card {
+        width: 24.2%;
+    }
+
+    /*=============== FORM SECTION ===============*/
+    .form__container {
+        width: 20%;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {}
